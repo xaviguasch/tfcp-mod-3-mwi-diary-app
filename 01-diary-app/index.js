@@ -10,4 +10,6 @@ entryForm.addEventListener('submit', (e) => {
   entryDiv.innerText = entryTextbox.value
 
   entriesSection.append(entryDiv)
+
+  entryTextbox.value = ''
 })
