@@ -1,5 +1,21 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+  color: #16697a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.entry-textbox {
+  background-color: #ffa62b;
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: unset;
+  border-radius: 25px;
 }
