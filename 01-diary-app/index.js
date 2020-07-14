@@ -8,6 +8,7 @@ entryForm.addEventListener('submit', (e) => {
   const entryDiv = document.createElement('div')
   entryDiv.className = 'singe-entry'
   entryDiv.innerText = entryTextbox.value
+  entryDiv.style.display = 'none'
 
   entriesSection.append(entryDiv)
 
