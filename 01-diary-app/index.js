@@ -23,5 +23,9 @@ entryForm.addEventListener('submit', (e) => {
   displayEntryButton.innerText = count
   entriesNav.append(displayEntryButton)
 
+  displayEntryButton.addEventListener('click', () => {
+    entryDiv.style.display = 'block'
+  })
+
   count++
 })
