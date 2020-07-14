@@ -10,7 +10,7 @@ entryForm.addEventListener('submit', (e) => {
 
   const entryDiv = document.createElement('div')
 
-  entryDiv.className = 'singe-entry'
+  entryDiv.className = 'single-entry'
   entryDiv.innerText = entryTextbox.value
   entryDiv.style.display = 'none'
 
@@ -24,6 +24,9 @@ entryForm.addEventListener('submit', (e) => {
   entriesNav.append(displayEntryButton)
 
   displayEntryButton.addEventListener('click', () => {
+    const allEntries = document.querySelectorAll('.single-entry')
+
+    allEntries.forEach((a) => (a.style.display = 'none'))
     entryDiv.style.display = 'block'
   })
 
