@@ -1,11 +1,13 @@
-const entryForm = document.getElementById('entryForm')
-const entriesSection = document.getElementById('entries')
+const entryForm = document.querySelector('#entryForm')
+const entriesSection = document.querySelector('#entries')
 const entryTextbox = document.querySelector('.entry-textbox')
+const entriesNav = document.querySelector('.entries-nav')
 
 entryForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
   const entryDiv = document.createElement('div')
+
   entryDiv.className = 'singe-entry'
   entryDiv.innerText = entryTextbox.value
   entryDiv.style.display = 'none'
@@ -13,4 +15,9 @@ entryForm.addEventListener('submit', (e) => {
   entriesSection.append(entryDiv)
 
   entryTextbox.value = ''
+
+  const displayEntryButton = document.createElement('button')
+  displayEntryButton.className = 'display-entry-button'
+  displayEntryButton.innerText = 1
+  entriesNav.append(displayEntryButton)
 })
