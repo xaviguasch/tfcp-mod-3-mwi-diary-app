@@ -3,6 +3,8 @@ const entriesSection = document.querySelector('#entries')
 const entryTextbox = document.querySelector('.entry-textbox')
 const entriesNav = document.querySelector('.entries-nav')
 
+let count = 1
+
 entryForm.addEventListener('submit', (e) => {
   e.preventDefault()
 
@@ -18,6 +20,8 @@ entryForm.addEventListener('submit', (e) => {
 
   const displayEntryButton = document.createElement('button')
   displayEntryButton.className = 'display-entry-button'
-  displayEntryButton.innerText = 1
+  displayEntryButton.innerText = count
   entriesNav.append(displayEntryButton)
+
+  count++
 })
